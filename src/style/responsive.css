@@ -14,6 +14,7 @@
     
     main#login{
         width: 75vw;
+        height: 300px;
         display: flex;
         justify-content: space-between;
     }
@@ -25,6 +26,10 @@
 
     section#form{
         width: 65%;
+    }
+
+    section#form >p{
+        font-size: 1rem;
     }
 
 }
@@ -39,6 +44,7 @@
         display: flex;
         justify-content: space-between;
         width: 900px;
+        height: 380px;
     }
 
     section#image{
@@ -52,4 +58,30 @@
         order: 1;
     }
 
+    section#form >h1{
+        font-size: 2rem;
+    }
+
+    section#form >p{
+        font-size: 1.5rem;
+    }
+
+    p.space{
+        width: 400px;
+        margin:10px auto;
+    }
+
+    form > p > input[type=submit]{
+        display: block;
+        width: 400px;
+        height: 40px;
+        margin: auto;
+    }
+
+    a.button{
+        display: block;
+        width: 400px;
+        height: 40px;
+        margin: 10px auto;      
+    }
 }

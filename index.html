@@ -6,6 +6,9 @@
     <title>Login project</title>
     <link rel="stylesheet" href="./src/style/style.css">
     <link rel="stylesheet" href="./src/style/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <main id="login">
@@ -22,16 +25,37 @@
 
             <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
 
-            <form action="login.php" method="post">
+            <form action="login.php" method="post" autocomplete="on">
 
-                <p><label for="iuser">Usuário:<input type="text" name="user" id="iuser"></label></p>
+                <p class="space">
+                    <span class="material-symbols-outlined">person</span>
 
-                <p><label for="ipassword">Senha:<input type="password" name="password" id="ipassword"></label></p>
+                    <input type="email" name="user" id="iuser" placeholder="Seu email" autocomplete="email"
+                    required maxlength="30">
+ 
+                    <label for="iuser">Login</label>
+                </p>
+
+                <p class="space">
+                    <span class="material-symbols-outlined">key</span>
+                    
+                    <input type="password" name="password" id="ipassword" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="16">
+
+                    <label for="ipassword">Senha</label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Entrar">
+                    <a href="forgotPassword.html" class="button">Esqueci minha senha <span class="material-symbols-outlined">key_off</span></a>
+                </p>
 
             </form>
 
         </section>
  
     </main>
+
+    <!-- <span class="material-icons">key</span> -->
+
 </body>
 </html>
